@@ -1,0 +1,375 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav, ul
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+a:hover
+{
+	opacity: 1;
+}
+
+header
+{
+	background-color: green; 
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+}
+
+
+header img
+{
+	width: 200px;
+}
+
+header nav 
+{
+	display: flex;
+}
+
+header li 
+{
+	margin: 0 15px;
+}
+
+header li a
+{
+	color: yellow;
+}
+
+header li:first-child 
+{
+	margin-left: 0;
+}
+
+header li:first-child 
+{
+	margin-right: 0;
+}
+
+.hero
+{
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.hero h1 
+{
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.hero h3
+{
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.hero .btn
+{
+	background-color: #fff;
+	border-radius: 4px;
+	color: green;
+	padding: 20px 50px;
+	text-transform: uppercase;
+}
+
+.hotel
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+}
+
+.hotel h3
+{
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #191c03;
+	text-align: center;
+}
+
+.hotel p
+{
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: #191c03;
+	text-align: center;
+}
+
+.hotel hr
+{
+	width: 200px;
+	height: 2px;
+	background-color: #191c03;
+	margin-bottom: 70px;
+	border: none;
+}
+
+.hotel .grid 
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hotel .grid  li
+{
+	height: 350px;
+	padding: 20px;
+	border-radius: 4px;
+	background-clip: context-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.hotel .grid li.small
+{
+	flex-basis: 40%;
+}
+
+.hotel .grid li.larger 
+{
+	flex-basis: 60%;
+}
+
+.caracteristicas
+{
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+}
+
+.caracteristicas h3
+{
+	
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: white;
+	text-align: center;
+}
+
+.caracteristicas p
+{
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: white;
+	text-align: center;
+}
+
+.caracteristicas hr
+{
+	width: 200px;
+	height: 2px;
+	background-color: white;
+	margin-bottom: 70px;
+	border: none;
+}
+
+.caracteristicas .grid
+{
+	width: 100%;
+	display: flex;
+}
+
+.caracteristicas .grid li 
+{
+	padding: 0 30px;
+	text-align: center;
+}
+
+.caracteristicas .grid li i
+{
+	color: white;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+.caracteristicas .grid li h4
+{
+	font-size: 1.5rem;
+	color: white;
+}
+
+.newsletter
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+}
+
+.newsletter h3
+{
+	
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: yellow;
+	text-align: center;
+}
+
+.newsletter p
+{
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: white;
+	text-align: green;
+}
+
+.newsletter hr
+{
+	width: 200px;
+	height: 2px;
+	background-color: yellow;
+	margin-bottom: 70px;
+	border: none;
+}
+
+.newsletter form 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80%;
+	max-width: 800px;
+}
+
+.newsletter form input 
+{
+	padding: 15px;
+	border: 1px solid;
+	border-radius: 4px;
+	margin-right: 15px;
+	flex: 1;
+}
+
+.newsletter button
+{
+	padding: 15px;
+	background-color: yellow;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+footer 
+{
+	display: flex;
+	flex-direction: column;
+	background-color: green;
+	padding: 50px 0;
+	align-items: center;
+}
+
+footer ul 
+{
+	display: flex;
+	margin-bottom: 25px;
+}
+
+footer ul li 
+{
+	margin-right: 10px;
+}
+
+footer ul li:last-child
+{
+	margin-right: 0px;
+}
+
+footer ul li a
+{
+	color: white;
+	font-size: 2rem;
+}
+
+footer ul li a:hover
+{
+	color: blue;
+	font-size: 2rem;
+}
+
+footer p 
+{
+	color: white;
+	text-align: center;
+}
+
+@media(max-width: 700px)
+{
+	header
+	{
+		flex-direction: column;
+	}
+	
+	header img 
+	{
+		margin-bottom: 15px;
+	}
+	
+	.hero h1 
+	{
+	font-size: 2.5rem; 
+	}
+	
+	.hero h3 
+	{
+	font-size: 1.3rem; 
+	}
+	
+	.hotel .grid li.small, .hotel .grid li.larger 
+	{
+		flex-basis: 100%;
+	}
+
+	.newsletter input 
+	{
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+@media(max-width: 850px)
+{
+	.caracteristicas .grid 
+	{
+		flex-direction: column;
+	}
+}
+

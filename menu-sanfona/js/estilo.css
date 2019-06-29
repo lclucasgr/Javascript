@@ -1,0 +1,16 @@
+*
+{
+	margin: 0;
+}
+
+.menu 
+{
+	position: absolute;
+	font: 13px Arial, Verdana, Sans-serif;
+	background-color: #91c0cf;
+	text-align: center;
+	width: 250px;
+	margin: 50px;
+	padding: 2px;
+	
+}

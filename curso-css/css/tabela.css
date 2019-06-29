@@ -1,0 +1,49 @@
+.primeiro
+{
+	height: 80px;
+	width: 170px;
+	color: white;	
+}
+
+.primeiro-numero 
+{
+	background-color: green;
+	width: 40px;
+	height: 23px;
+	color: white;
+	margin-top: 0px;
+	border: solid; 
+	padding-top: 2px;
+	padding-left: 2px;
+	font-family: arial;
+}
+
+.primeiro-nome
+{
+	background-color: blue;
+	border: solid;
+	width: 130px;
+	height: 23px;
+	color: white;
+	font-family: arial;
+	float: left;
+	margin-top: -31px;
+	float: right;
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+.segundo-nome
+{
+	background-color: red;
+	border: solid;
+	width: 130px;
+	height: 23px;
+	color: white;
+	font-family: arial;
+	float: left;
+	margin-top: -31px;
+	float: right;
+	padding-top: 2px;
+	padding-left: 2px;
+}

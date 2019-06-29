@@ -1,0 +1,103 @@
+.topo
+{
+	/* background: #ccc; */
+	width: 960px;
+	height: 280px;
+	margin: 0 auto;
+}
+
+.logo
+{
+	/* background: #f00; */
+	width: 240px;
+	height: 240px;
+	margin-top: 10px;
+	float: left;
+}
+
+.informacoes
+{
+	/* background: #00f; */
+	width: 180px;
+	height: 70px;
+	margin-top: 20px;
+	float: right;
+	color: green;
+	
+}
+
+.informacoes p
+{
+	font-family: verdana;
+	font-size: 12px;
+}
+
+.menu
+{
+	width: 960px;
+	height: 70px;
+	margin: 0 auto;
+	background-color: green;
+}
+
+.menu a 
+{
+	color: white;
+	font-family: arial;
+	font-size: 20px;
+	text-decoration: none;
+	display: block;
+	float: left;
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+.menu a:hover
+{
+	color: yellow;
+}
+
+.banner
+{
+	width: 960px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.conteiner 
+{
+	width: 960px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.chamada 
+{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 40px;
+	text-align: center;
+	font-family: arial;
+}
+
+.cruzeiro 
+{
+	color: blue;
+}
+
+.internacional
+{
+	color: red;
+}
+
+.volta-redonda
+{
+	color: yellow;
+}
+
+.palmeiras 
+{
+	color: green;
+}

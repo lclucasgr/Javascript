@@ -1,0 +1,49 @@
+.topo
+{
+	background-color: green;
+	width: 900px;
+	height: 200px;
+	margin: 5px;
+	display: block;
+}
+
+.menu 
+{
+	background-color: yellow;
+	height: 50px;
+	width: 900px;
+	margin: 5px;
+	display: block;
+}
+
+.esquerda
+{
+	background-color: red;
+	height: 50px; /*opcional */
+	width: 445px;
+	margin: 5px;
+	display: block;
+	float: left;
+
+}
+
+.direita
+{
+	background-color: red;
+	height: 50px; /* opcional */
+	width: 445px;
+	margin: 5px;
+	display: block;
+	float: left;
+}
+
+
+.rodape
+{
+	background-color: blue;
+	height: 80px;
+	width: 900px;
+	margin: 5px;
+	display: block;
+	clear: both;
+}
