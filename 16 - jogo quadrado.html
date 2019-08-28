@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+        
+	  <style>
+		 body
+		 {
+			background-color: #efefef;
+		 }
+		 
+		 .box
+		 {
+			position: relative;
+			left: 0px;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		 }
+		 
+		 button
+		 {
+			font-size: 2rem;
+			background-color: blue;
+			color: #fff;
+			padding: 1rem 2rem;
+		 }
+	  </style>
+	  
+	   </head>	 
+   
+    <body>
+	
+	   <div class="box"></div>
+	   <hr>
+	   <button id="starting">Iniciar</button>
+	   <button id="retry">Jogar Novamente</button>
+	  
+      <script src="js/jquery-3.3.1.min.js">	  
+	   </script>
+	   
+	   <script>
+	       var box = $('.box');
+		   var starting = $("#starting");
+		   var retry = $("#retry");
+		   
+		   starting.on("click", function()
+		   {
+		      box.animate({
+			  left:"800"}, 5000)
+		   })
+		   
+		   retry.on("click", function()
+		   {
+		      box.animate({
+			  left:"0"}, 5000)
+		   })
+	   </script>
+   </body>
+   
+</html> 

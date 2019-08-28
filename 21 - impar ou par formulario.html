@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+	  
+	</head>	 
+   
+    <body>
+	   
+	   <form id="formulario">
+			<input type="text" name="numero" id="numero"></br></br>
+			<button id="verificar" onclick="verificarNumero();">Verificar</button>
+			
+			<a href="#" onclick="verificarNumero();">Verificar</a>
+	   </form>
+	   
+	   <script>   
+		   function verificarNumero()
+		   {
+				var formulario = document.getElementById("formulario");
+				var numero = formulario.numero.value;
+		   
+				if(numero % 2 == 0 && numero >= 0 && numero <= 99)
+				{
+					document.write(numero+" - par"); 
+				}
+		   
+				else if(numero % 2 == 1 && numero >=0 && numero <= 99)
+				{
+					document.write(numero+" - impar");
+				}
+				
+				else 
+				{
+					document.write("Somente numeros de 0 a 99 são classificados como pares e impares");
+				}
+			}	
+	   </script>
+   </body>
+   
+</html> 

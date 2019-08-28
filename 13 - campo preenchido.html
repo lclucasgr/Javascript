@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+   
+   <style>
+	   .error
+	   {
+		  border:2px solid red;	
+	   }
+   </style>
+   </head>	 
+   
+   <body>
+      
+	 <form action="#" method="POST">
+	    <input type="text" name="name" value="lucas">
+		<input type="email" name="email" value="lclucasgr@gmail.com">
+		<button type="submit">Enviar</button>
+	 </form>
+	  
+      <script>
+		  var form = document.querySelector("form");
+		  
+		  form.addEventListener("submit", function(evento)
+		  {
+				evento.preventDefault();
+				
+				for(var i = 0; i < this.elements.length; i++)
+				{
+					var item = this.elements[i];
+					
+					if(item.type !== "submit")
+					{
+				    	if(item.value == "")
+						{
+							item.classList.add("error");
+						}
+						
+						else
+						{
+							item.classList.remove("error");
+						}
+					}	
+				}
+		  })
+		  
+		  
+	   </script>
+   </body>
+   
+</html> 

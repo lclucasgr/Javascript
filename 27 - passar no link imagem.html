@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+	</head>	 
+   
+    <body>
+	   
+	  <img alt="" src="imagens/cruzeiro.png" name="imagens"/>
+	  <a href="#" onmouseover="javascript:imagens.src='imagens/cruzeiro.png'">Cruzeiro</a>
+	  <a href="#" onmouseover="javascript:imagens.src='imagens/internacional.png'">Internacional</a>
+	  <a href="#" onmouseover="javascript:imagens.src='imagens/volta.png'">Volta Redonda</a>
+	  <a href="#" onmouseover="javascript:imagens.src='imagens/palmeiras.png'">Palmeiras</a>
+	
+	<script>   
+	    function validarFormulario()
+		{
+		     var nome = document.dados.nome.value;
+			 
+			 if(nome == "")
+			 {
+				alert("Este campo não pode ser vazio");
+				document.dados.nome.focus();
+				return false;
+			 }
+			 
+			 if(nome.length <= 2)
+			 {
+				alert("No minimo 3 caracteres");
+			 }
+		}
+	</script>
+	  
+   </body>
+   
+</html> 

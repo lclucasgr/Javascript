@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+	  
+	   <script>   
+		   function validarDados()
+		   {
+		       form = document.formulario;
+			   
+			   valida = form.email.value.indexOf("@");
+			   
+		       if(valida == -1)
+			   {
+					alert("Email incorreto");
+					return false;
+			   }
+		   }
+		   
+	   </script>
+	  
+	</head>	 
+   
+    <body>
+	   
+	   <form id="formulario" method="post" action="23.html" onsubmit="return validarDados()">
+			<input type="text" name="email" id="email"></br></br>
+			<button id="validar" onclick="validarDados();">Validar Dados</button>
+			
+			<a href="#" onclick="validarDados();">Verificar</a>
+	   </form>
+	  
+   </body>
+   
+</html> 

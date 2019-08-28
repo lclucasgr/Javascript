@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+	</head>	 
+   
+    <body>
+	   
+	   <form name="dados" method="post" action="26.html" onSubmit="return validarFormulario();">
+		<fieldset>
+		<legend>Dados</legend>
+
+		<label for="valor1">Nome:</label>
+		<input type="text" name="nome" id="nome" placeholder="digite seu nome"/></br></br>
+
+		<label for="valor1">Email:</label>
+		<input type="text" name="email" id="email" placeholder="digite seu email"/></br></br>
+		
+
+      <input type="submit" name="enviar" value="enviar"/>
+	</fieldset>
+	</form>
+	
+	<script>   
+	    function validarFormulario()
+		{
+		     var nome = document.dados.nome.value;
+			 
+			 if(nome == "")
+			 {
+				alert("Este campo não pode ser vazio");
+				document.dados.nome.focus();
+				return false;
+			 }
+			 
+			 if(nome.length <= 2)
+			 {
+				alert("No minimo 3 caracteres");
+			 }
+		}
+	</script>
+	  
+   </body>
+   
+</html> 

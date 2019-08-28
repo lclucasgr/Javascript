@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+   
+   <style>
+	   tbody >tr:hover{
+		   background-color: #ccc;
+	   }
+   </style>
+   </head>	 
+   
+   <body>
+      
+	  <input type="text" id="search">
+	  
+	  <div id="result">Nenhum resultado</div>
+	  
+      <script>
+		  var text = document.getElementById("search");
+		  var result = document.getElementById("result");
+		  var resultDefaultText = "Nenhum resultado";
+		  
+		  text.addEventListener("keyup", function()
+		  {
+				var value = this.value;
+				if(value !== "")
+				   result.innerText = this.value;
+				else
+                   result.innerText = resultDefaultText;				
+		  })
+		  
+	   </script>
+   </body>
+   
+</html> 

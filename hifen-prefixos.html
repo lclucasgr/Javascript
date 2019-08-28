@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <meta charset="utf-8">
+	  <link rel="stylesheet" type="text/css" href="css/estrutura.css">
+	  <title>Estrutura</title>
+   </head>
+   
+   <body>
+	  <h1>Verificar se o uso do hifen está correto</h1>
+	  <form id="hifen" name="hifen" method="post" action="">
+	  
+	  <label>Selecione o prefixo:</label>
+	  <select name="prefixo" id="prefixo">
+	     <option value="SUB">SUB</option>
+		 <option value="MAL">MAL</option>
+		 <option value="HIPER">HIPER</option>
+		 <option value="PAN">PAN</option><br>
+	  <select>
+	  
+	  <br><br><label>
+	  Informe a palavra desejada:</label>
+	  <input type="text" id="palavra" name="palavra" placeholder="informe a palavra para ligar ao prefixo" size="30" onkeypress="return ApenasLetras(event, this);"/>
+	  
+	  <br><br><label for="pal">Resultado: </label><input type="text" name="pal" id="pal" disabled="disabled" />
+	  
+	  <br><br><input type="button" value="verificar" class="botao" onClick="verificar(document.hifen.prefixo.value)"/>
+	  
+	  </form>
+	  
+	  <script>
+	     function verificar(prefixo)
+		 {
+			var hifen = document.getElementById("hifen");
+			var palavra = document.hifen.palavra.value.toLowerCase();
+			var inicial = palavra.substring(1,0);
+			var inicialUp = inicial.toUpperCase();
+			var prefix = document.hifen.prefixo.value.toLowerCase();
+			var pal;
+			
+			if(palavra == "")
+			{
+				alert("Campo nao pode ser vazio");
+			}
+			
+			if(prefixo == "SUB")
+			{
+				if(inicialUp == 'B' || inicialUp == 'H' || inicialUp == 'R' || inicialUp == 'T')
+				{
+					//document.write(prefix+"-"+palavra+" tem hifen pois a palavra seguinte ao prefixo se inicia com B, H, R, T");
+					pal = prefix+"-"+palavra;					
+				}
+				
+				else 
+				{
+					pal = prefix+palavra;	
+				}
+			}
+			
+			else if(prefixo == "MAL")
+			{
+				if(inicialUp == 'H' || inicialUp == 'L')
+				{
+					//document.write(prefix+"-"+palavra+" tem hifen pois a palavra seguinte ao prefixo se inicia com H ou L");
+					pal = prefix+"-"+palavra;	
+				}
+				
+				else 
+				{
+					//document.write(prefix+palavra+ " - é tudo junto pois palavra seguinte ao prefixo não inicia com as letras H ou L");
+					pal = prefix+palavra;	
+				}
+			}
+			
+			else if(prefixo == "HIPER")
+			{
+				if(inicialUp == 'H' || inicialUp == 'R')
+				{
+					//document.write(prefix+"-"+palavra+" tem hifen pois a palavra seguinte ao prefixo inicia com H ou R");
+					pal = prefix+"-"+palavra;	
+				}
+				
+				else 
+				{
+					//document.write(prefix+palavra+ " - é tudo junto pois palavra seguinte ao prefixo não inicia com as letras H ou R");
+					pal = prefix+palavra;	
+				}
+			}
+			
+			else 
+			{
+				if(inicialUp == 'H' || inicialUp == 'N')
+				{
+					//document.write(prefix+"-"+palavra+" tem hifen pois a palavra seguinte ao prefixo inicia com H ou N");
+					pal = prefix+"-"+palavra;	
+				}
+				
+				else 
+				{
+					//document.write(prefix+palavra+ " - é tudo junto pois palavra seguinte ao prefixo não inicia com as letras H ou N");
+					pal = prefix+palavra;
+				}
+			}
+			
+			if(palavra.length > 0)
+			{
+				document.hifen.pal.value = pal;
+			}
+			
+			else 
+			{
+				pal = "";
+				document.hifen.pal.value = pal;
+			}
+		 }
+		 
+		 function ApenasLetras(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        } else if (e) {
+            var charCode = e.which;
+        } else {
+            return true;
+        }
+        if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+            return true;
+        else
+            return false;
+    } catch (err) {
+        alert(err.Description);
+    }
+}
+	  </script>
+   
+   </body>
+</html>

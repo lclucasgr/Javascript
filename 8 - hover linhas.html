@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+   
+   <style>
+	   
+	   .link{
+	     color: lime;
+	   }
+	   
+	   .tractive
+	   {
+		 background-color: blue;
+	   }
+   </style>
+   </head>	 
+   
+   <body>
+      <a href="#" id="link">
+         <h1>Ola</h1>
+	  </a>
+	  
+	  
+	  <table style="width: 100%;">
+	     <thead>
+		    <th align="left">Marca</th>
+			<th align="left">Modelo</th>
+		 </thead>
+		 
+		 <tbody>
+		 
+		 <tr class="tr">
+		    <td style="height: 30px;">Marcopolo</td>
+			<td style="height: 30px;">Veneza</td>
+		 </tr>
+		 
+		 <tr class="tr">
+		    <td style="height: 30px;">Comil</td>
+			<td style="height: 30px;">Svelto II</td>
+		 </tr>
+		 </tbody>
+	  </table>
+   
+      <script>
+		  var link = document.getElementById("link");
+		  var trs = document.getElementsByClassName("tr");
+		  
+		  link.addEventListener("mouseover", function()
+		  {
+				link.classList.add("link")
+		  })
+		  
+		  link.addEventListener("mouseleave", function()
+		  {
+				link.classList.remove("link")
+		  })
+		  
+		  for(var i = 0; i < trs.length; i++)
+		  {
+				trs[i].addEventListener("mouseover", function()
+				{
+					this.classList.add("tractive");
+				})
+				
+				trs[i].addEventListener("mouseleave", function()
+				{
+					this.classList.remove("tractive");
+				})
+		  }
+		  
+	   </script>
+   </body>
+   
+</html>

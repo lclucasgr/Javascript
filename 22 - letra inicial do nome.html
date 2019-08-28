@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>1</title>
+	  
+	</head>	 
+   
+    <body>
+	   
+	   <form id="formulario">
+			<input type="text" name="nome" id="nome"></br></br>
+			<button id="verificar" onclick="verificaNome();">Verificar</button>
+			
+			<a href="#" onclick="verificaNome();">Verificar</a>
+	   </form>
+	   
+	   <script>   
+		   function verificaNome()
+		   {
+				var formulario = document.getElementById("formulario");
+				var nome = formulario.nome.value;
+				var inicial = nome.substring(1,0);
+				document.write(nome);
+				document.write("</br>"+nome.length);
+                var inicialLw = inicial.toLowerCase();
+				document.write("</br>"+inicialLw);				
+				if(inicialLw == 'l')
+				{
+					document.write(nome + " Sua prova sera na Unicentro");
+				}
+				
+				else
+				{
+					document.write(nome + " Sua prova sera na UTFPR");
+				}
+			}	
+	   </script>
+   </body>
+   
+</html> 
