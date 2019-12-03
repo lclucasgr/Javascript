@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <title>Aula1</title>
+	  <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> !-->
+	  
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	  
+	  <script type="text/javascript">
+	  
+	    $(function(){
+			$('img').error(function(){
+				$('img').attr("src", "imagens/not-found.jpg");
+			});	
+		});
+	
+		
+		//$('img').width($(window).width());
+	    //$('img').width($(window).width()).height($(window).height());
+		
+		/* Acompanhar a largura e altura do navegador
+		$(window).resize(function()
+		{
+			$('img').width($(window).width()).height($(window).height());
+		});
+		
+		//Ocultar
+		
+		$('body').css("height", "5000px");
+		
+		$(window).scroll(function()
+		{
+			var topo = $(window).scrollTop();
+			
+			if(topo > 180)
+			{
+				$('img').fadeOut('1000');
+			}
+			
+			else
+			{
+				$('img').fadeIn('1000');
+			}
+			
+		});
+		*/
+		
+	  </script>
+	  
+   </head>
+   
+   <body> 
+      <img src="imagens/santos.jpg"/>
+	  
+   </body>
+</html>
+
+

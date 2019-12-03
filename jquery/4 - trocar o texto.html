@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <title>Aula1</title>
+	  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	  
+	  <script type="text/javascript">
+	    $(document).ready(function(){
+		
+		     /*
+		     $('h1').css("color", "blue");
+			 $('h1').hide();
+			 $('h1').delay('1000');
+			 $('h1').fadeIn("slow");
+			 $('h1').text('Quem tem mais tem 10');
+			 $('h1').click();
+			 */
+			 $('h1')
+			 .css("color", "blue")
+			 .hide()
+			 .delay('1000')
+			 .fadeIn("slow")
+			 .text("Quem tem mais tem 10")
+			 .click(function(){
+				$('body').css("background", "yellow");
+				$('h1').css("color", "green");
+				$('a').css("color", "green");
+			 });
+		});
+	    
+	  </script>
+	  
+   </head>
+   
+   <body bgcolor="red"> 
+      <h1 id="title" style="color:blue;">Titulo da pagina</h1>
+	  <a href="#"><span color="Yellow">Ola Mundo</span></a></br>
+	  <a href="#"><span color="Yellow">B</span></a></br>
+	  <a href="#"><span color="Yellow">C</span></a>
+	  
+   </body>
+</html>
+
+

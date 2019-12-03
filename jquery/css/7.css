@@ -1,0 +1,38 @@
+body
+{
+	font:14px;
+}
+
+.ex1
+{
+	width: 460px;
+	padding: 20px;
+	background-color: red;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+
+p, input
+{
+	width: 480px;
+	padding: 5px;
+	background: blue;
+	margin: 0 auto; 
+	text-align: center;
+	color: white;
+	border: 5px solid black;
+	margin-top: 10px;
+}
+
+
+.ev2
+{
+	background-color: green;
+}
+
+.ev3
+{
+	background-color: gray;
+}
+

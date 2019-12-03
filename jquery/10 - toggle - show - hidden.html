@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+	  <meta charset="utf-8">
+      <title>Aula1</title>
+	  <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> !-->
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	  <link rel="stylesheet" href="css/10.css">
+	  <script type="text/javascript">
+		$(function()
+		{
+			var ex = $('.ex1');
+			
+			$('.ev1').click(function()
+			{
+				ex.hide(3000); //'fast' e 'slow' 
+			});
+			
+			$('.ev2').click(function()
+			{
+				ex.show(3000); //'fast' e 'slow' 
+			});
+			
+			$('.ev3').click(function()
+			{
+				ex.toggle(3000); //'fast' e 'slow' 
+			});
+			
+			$('.ev4').keyup(function()
+			{
+				var texto = $(this).val();
+				
+				if(texto == 'hide')
+				{
+					ex.hide(3000); //'fast' e 'slow'
+				}
+
+				if(texto == 'show')
+				{
+					ex.show(3000); //'fast' e 'slow'
+				}
+
+				if(texto == 'toggle')
+				{
+					ex.toggle(3000); //'fast' e 'slow'
+				}
+			});
+			
+			
+			
+		});
+	  </script>
+	  
+   </head>
+   
+   <body> 
+	 <div class="ex1">Aguardando ação</div>
+	 
+	 <p class="ev1">Hidden</p>
+	 <p class="ev2">Show</p>
+	 <p class="ev3">Toggle</p>
+	 <input type="text" class="ev4">
+   </body>
+</html>
+
+

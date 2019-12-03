@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+	  <meta charset="utf-8">
+      <title>Aula1</title>
+	  <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> !-->
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	  <link rel="stylesheet" href="css/8.css">
+	  <script type="text/javascript">
+		$(function()
+		{
+			$('.place').each(function() //cada
+			{
+				var place = $(this).attr('title');
+				var input = $(this);
+				
+				input
+					.val(place)
+					.css('color', '#ccc')
+					.focusin(function()
+					{
+						input.css('color', '#000');
+					    if(input.val() == place)
+						{
+							input.val('');
+						}
+					}).focusout(function()
+					{
+						if(input.val() == '')
+						{
+							input.css('color', '#ccc');
+							input.val(place);
+						}
+					});
+			});
+			
+			var ex = $('.ex1');
+			$('.key').keyup(function()
+			{
+				ex.text($(this).val());
+			});
+			
+		});
+	  </script>
+	  
+   </head>
+   
+   <body> 
+	 <div class="ex1">Aguardando ação</div>
+	 
+	 <form>
+		<label>
+			<input type="text" class="place" title="Digite seu nome">
+		</label>
+		
+		<label>
+			<input type="text" class="place" title="Digite seu email">
+		</label>
+		
+		<label>
+			<input type="text" class="place" title="Digite sua cidade">
+		</label>
+		
+		<label>
+			<textarea rows="3" class="place key" title="Digite seu recado"></textarea>
+		</label>
+		
+		<label>
+			<button>Botão</button>
+			<button>Enviar</button>
+		</label>
+	 </form>
+   </body>
+</html>
+
+

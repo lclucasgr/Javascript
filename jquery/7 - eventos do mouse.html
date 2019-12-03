@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+	  <meta charset="utf-8">
+      <title>Aula1</title>
+	  <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> !-->
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	  <link rel="stylesheet" href="css/7.css">
+	  <script type="text/javascript">
+		$(function()
+		{
+			var ex = $('.ex1');
+			$('.ev1').click(function()
+			{
+				$(this).css("background", "yellow");
+				ex.text("Mudou para amarelo");
+			});
+			
+			$('.ev2').dblclick(function()
+			{
+				$('.ev1').css("background", "yellow");
+				ex.text("Mudou para amarelo clicando 2x no verde");
+			});
+			
+			//similar a esse mousedown e mouseup
+			//similar mouseenter e mouseout
+			//similar mouseover e mouselive - Usar em filhos da classe paragrafo
+			var a = 0;
+			$('.ev3').focusin(function()
+			{
+				$('.ev1').css("background", "yellow");
+				ex.text("Escrevendo um texto");
+			}).focusout(function()
+			{
+				$('.ev1').css("background", "yellow");
+				{
+					ex.text("Voce tirou o foco");
+				}
+			});
+			
+			//hover - passar o mouse
+			
+		});
+	  </script>
+	  
+   </head>
+   
+   <body> 
+	  <div class="ex1">Aguardando ação</div>
+	  <p class="ev1">um Clique</p>
+	  <p class="ev2">Dois cliques</p>
+	  <input type="text" class="ev3">
+   </body>
+</html>
+
+
